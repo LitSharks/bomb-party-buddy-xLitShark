@@ -1,5 +1,5 @@
 Source code for the [Bomb Party Buddy](https://addons.mozilla.org/firefox/addon/bomb-party-buddy/) firefox extension.
-## Hi, this project has not been uploaded yet, and is currently a 1:1 copy for Party Buddy
+## Hi, this project added some new features in the code including the menu and its features, but I left the readme, liscence, and about everything else the same. Props to NiTrO_FuN for creating the original extension and allowing me to make my forked version.
 ## Wordlist Utilities
 
 The `words/utils.py` script provides utilities for working with the wordlists in the `words/` directory.  
