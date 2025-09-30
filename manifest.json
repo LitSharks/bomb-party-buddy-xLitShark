@@ -1,14 +1,11 @@
 {
+  "update_url": "https://clients2.google.com/service/update2/crx",
+
   "manifest_version": 3,
 
   "name": "__MSG_extensionName__",
   "description": "__MSG_extensionDescription__",
-  "version": "1.6",
-  "browser_specific_settings": {
-    "gecko": {
-      "id": "bombpartybuddy@nitrofun.eu"
-    }
-  },
+  "version": "1.7",
 
   "default_locale": "en",
 
@@ -24,6 +21,10 @@
     }
   },
 
+  "background": {
+    "service_worker": "background/handler.js"
+  },
+
   "content_scripts": [
     {
       "matches": ["*://*.jklm.fun/*"],
@@ -32,17 +33,17 @@
     }
   ],
 
-  "background": {
-    "scripts": ["background/handler.js"]
-  },
-
   "web_accessible_resources": [
     {
-      "resources": ["content/injected.js", "words/*.txt"],
+      "resources": [
+        "content/injected.js",
+        "words/*.txt",
+        "words/foul-words-en.txt"
+      ],
       "matches": ["*://*.jklm.fun/*"]
     }
   ],
-  
+
   "permissions": [
     "storage"
   ]

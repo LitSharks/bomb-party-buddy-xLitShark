@@ -1,3 +1,5 @@
+// injected.js
+
 socket.on("setup", (data) => {
   if (data.milestone.name != "round") return;
   postMessage({
