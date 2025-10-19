@@ -1,9 +1,0 @@
-# Scripts
-*.py
-*.pyc
-
-# Keep tests
-!tests/*
-
-# Keep utils
-!utils.py

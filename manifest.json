@@ -1,11 +1,9 @@
 {
   "update_url": "https://clients2.google.com/service/update2/crx",
-
   "manifest_version": 3,
-
   "name": "__MSG_extensionName__",
   "description": "__MSG_extensionDescription__",
-  "version": "1.7",
+  "version": "69.69.69.67",
 
   "default_locale": "en",
 
@@ -21,10 +19,6 @@
     }
   },
 
-  "background": {
-    "service_worker": "background/handler.js"
-  },
-
   "content_scripts": [
     {
       "matches": ["*://*.jklm.fun/*"],
@@ -33,18 +27,23 @@
     }
   ],
 
+  "background": {
+    "service_worker": "background/handler.js"
+  },
+
   "web_accessible_resources": [
     {
       "resources": [
         "content/injected.js",
-        "words/*.txt",
-        "words/foul-words-en.txt"
+        "words1/*"
       ],
       "matches": ["*://*.jklm.fun/*"]
     }
   ],
 
-  "permissions": [
-    "storage"
+  "permissions": ["storage"],
+
+  "host_permissions": [
+    "https://extensions.litshark.ca/*"
   ]
 }
